@@ -1,0 +1,111 @@
+/* TodoApp.css */
+
+.todo-app-container {
+  margin: 40px auto;
+  max-width: 800px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #afaff5;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.todo-app-container h3 {
+  margin-bottom: 20px;
+  color: #4a4a7a;
+  text-align: center;
+}
+
+.todo-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.todo-buttons button {
+  background-color: #5a67d8;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(90,103,216,0.3);
+}
+
+.todo-buttons button:hover {
+  background-color: #434aa8;
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Todo Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  background: #e6e9f577;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.todo-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo-item input[type="text"],
+.todo-item input[type="date"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  flex: 1;
+  transition: border-color 0.3s ease;
+}
+
+.todo-item input[type="text"]:focus,
+.todo-item input[type="date"]:focus {
+  border-color: #5a67d8;
+  outline: none;
+}
+
+.todo-item input[type="text"]:first-of-type {
+  flex: 3;
+}
+
+.todo-item button {
+  background-color: #e53e3e;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(229,62,62,0.4);
+  transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+  background-color: #9b2c2c;
+}
+
+/* Texto tachado si está completado */
+.todo-item.completed input[type="text"] {
+  text-decoration: line-through;
+  color: #999;
+}
