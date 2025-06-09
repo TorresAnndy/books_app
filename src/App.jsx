@@ -24,7 +24,7 @@ function App() {
           <li><Link to="/todoapp">Tareas</Link></li>
           <li><Link to="/grafico">Grafico</Link></li>
           <li><Link to="/todos">CRUD</Link></li>
-          <li><Link to="/*">Aqui no hay nada</Link></li>
+          <li><Link to="*">Aqui no hay nada</Link></li>
         </ul>
       </nav>
 
