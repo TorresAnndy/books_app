@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 
-// 👉 Cambia esta URL si tu MockAPI es diferente
 const API_URL = "https://68476f3fec44b9f3493d1308.mockapi.io/todos";
 
 const ApiContext = React.createContext();

@@ -1,5 +1,5 @@
 import React, { useReducer, useContext, useRef, useEffect } from "react";
-import "../style/ToDoApp.css";  // Importa el CSS aquí
+import "../style/ToDoApp.css"; 
 
 const initialTodos = [
   {
